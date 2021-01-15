@@ -38,13 +38,39 @@ main {
 
 .card {
   display: inline-block;
+  position: relative;
   width: 100px;
   height: inherit;
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 1px 1px 3px grey;
+  background-image: url(../img/pattern.png);
+  background-size: contain;
 }
 
 .card:not(:first-child) {
   margin-left: 10px;
 }
+
+.card:hover {
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 80%;
+  background-color: white;
+}
+
+.balloon:hover {
+  background-image: url(../img/noun_air_balloon_3134741.png);
+}
+
+.bicycle {
+
+}
+
+.ship
+
+.submarine
+
+.tractor
+
+.tram
