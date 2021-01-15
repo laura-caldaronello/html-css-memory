@@ -22,3 +22,23 @@ h1 {
   color: white;
   text-shadow: 1px 1px grey;
 }
+
+main {
+  width: 430px;
+  margin: auto;
+}
+
+.line {
+  background-color: red;
+}
+
+.card {
+  display: inline-block;
+  width: 100px;
+  height: 120px;
+  background-color: yellow;
+}
+
+.card:not(:first-child) {
+  margin-left: 10px;
+}
