@@ -137,3 +137,10 @@ main {
 .tram {
   background-image: url(../img/noun_Tram_3134750.png);
 }
+
+footer {
+  margin-top: 15px;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+}
