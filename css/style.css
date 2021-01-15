@@ -41,11 +41,6 @@ main {
   position: relative;
   width: 100px;
   height: inherit;
-  border-radius: 5px;
-  border: 1px solid black;
-  box-shadow: 1px 1px 3px grey;
-  background-image: url(../img/pattern.png);
-  background-size: contain;
 }
 
 .card:not(:first-child) {
@@ -70,26 +65,53 @@ main {
   display: none;
 }
 
-.card > div:first-child {
-  position: absolute;
-  z-index: -1;
-  background-color: yellow;
-  /* margin: auto;
-  padding-top: 70%; */
+.uncovered {
+  display: none;
 }
 
-.card:hover {
+.card > div:first-child {
+  position: absolute;
+  width: inherit;
+  height: inherit;
   background-repeat: no-repeat;
   background-position: 50% 20%;
   background-size: 80%;
   background-color: white;
-  z-index: -2;
+  z-index: -1;
 }
 
-span {
+.balloon > span::before {
+  content: 'Air balloon';
+}
+
+.bicycle > span::before {
+  content: 'Bicycle';
+}
+
+.ship > span::before {
+  content: 'Cruise ship';
+}
+
+.submarine > span::before {
+  content: 'Submarine';
+}
+
+.tractor > span::before {
+  content: 'Tractor';
+}
+
+.tram > span::before {
+  content: 'Tram';
+}
+
+.card span {
   position: absolute;
-  top: 70%;
-  margin: auto;
+  width: inherit;
+  top: 75%;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(230 25 134);
+  text-shadow: 1px 1px grey;
 }
 
 .balloon {
@@ -97,13 +119,21 @@ span {
 }
 
 .bicycle {
-
+  background-image: url(../img/noun_Bicycle_3134821.png);
 }
 
-.ship
+.ship {
+  background-image: url(../img/noun_Cruise_Ship_3134824.png);
+}
 
-.submarine
+.submarine {
+  background-image: url(../img/noun_Submarine_3134738.png);
+}
 
-.tractor
+.tractor {
+  background-image: url(../img/noun_Tractor_3134797.png);
+}
 
-.tram
+.tram {
+  background-image: url(../img/noun_Tram_3134750.png);
+}
