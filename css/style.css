@@ -52,7 +52,25 @@ main {
   margin-left: 10px;
 }
 
-.card > span {
+.border {
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 3px grey;
+}
+
+.pattern {
+  position: relative;
+  height: inherit;
+  width: inherit;
+  background-image: url(../img/pattern.png);
+  background-size: contain;
+}
+
+.pattern:hover {
+  display: none;
+}
+
+.card > div:first-child {
   position: absolute;
   z-index: -1;
   background-color: yellow;
@@ -68,7 +86,13 @@ main {
   z-index: -2;
 }
 
-.balloon:hover {
+span {
+  position: absolute;
+  top: 70%;
+  margin: auto;
+}
+
+.balloon {
   background-image: url(../img/noun_air_balloon_3134741.png);
 }
 
