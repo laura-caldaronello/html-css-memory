@@ -52,11 +52,20 @@ main {
   margin-left: 10px;
 }
 
+.card > span {
+  position: absolute;
+  z-index: -1;
+  background-color: yellow;
+  /* margin: auto;
+  padding-top: 70%; */
+}
+
 .card:hover {
   background-repeat: no-repeat;
   background-position: 50% 20%;
   background-size: 80%;
   background-color: white;
+  z-index: -2;
 }
 
 .balloon:hover {
