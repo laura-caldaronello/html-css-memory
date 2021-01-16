@@ -61,7 +61,7 @@ main {
   background-size: contain;
 }
 
-.pattern:hover {
+.card:hover .pattern {
   display: none;
 }
 
